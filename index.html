@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="contenedor">
+    <div id="seleccionRol" class="contenedor">
+        <img src="img/AT&T_logo_2016.svg.png" alt="AT&T Logo" class="logo">
+        <h2>Selecciona tu rol</h2>
+        <button onclick="seleccionarRol('Asesor')">Asesor</button>
+        <button onclick="seleccionarRol('Asesora')">Asesora</button>
+        <button onclick="seleccionarRol('Supervisor')">Supervisor</button>
+        <button onclick="seleccionarRol('Supervisora')">Supervisora</button>
+        <button onclick="seleccionarRol('Asistente de Gerente')">Asistente de Gerente</button>
+        <button onclick="seleccionarRol('Gerente')">Gerente</button>
+    </div>
+    
+    <div id="formulario" class="contenedor" style="display: none;">
         <img src="img/AT&T_logo_2016.svg.png" alt="AT&T Logo" class="logo">
         <h2>Formulario de Datos</h2>
         <input type="tel" id="numeroPortar" placeholder="Número a portar">
         <input type="tel" id="nip" placeholder="NIP">
         <input type="text" id="zona" placeholder="Zona">
-        <input type="text" id="asesor" placeholder="Asesor">
+        <input type="text" id="asesor" placeholder="Nombre" disabled>
         <input type="text" id="icc" placeholder="ICC">
         <button onclick="copiarAlPortapapeles()">Copiar Datos</button>
         <button onclick="nuevaVenta()" class="nueva-venta">Nueva Venta</button>
